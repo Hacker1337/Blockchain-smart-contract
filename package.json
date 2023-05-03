@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "alchemy-sdk": "^2.8.2",
+    "dotenv": "^16.0.3"
+  },
+  "name": "blockchain_smart_contract",
+  "version": "1.0.0",
+  "description": "Smart contract for storing poetry project. Homework for university course.",
+  "main": "test_script.js",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
