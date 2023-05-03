@@ -1,10 +1,16 @@
 // For Hardhat 
 const contract = require("../artifacts/contracts/HelloWorld.sol/HelloWorld.json");
-console.log(JSON.stringify(contract.abi));
+
+
+require('dotenv').config();
+require("@nomiclabs/hardhat-ethers");
+
+const { API_URL_GOERLI, API_URL_SEPOLIA, PRIVATE_KEY, CONTRACT_ADDRESS } = process.env;
+
 
 
 // Provider
-const alchemyProvider = new ethers.providers.AlchemyProvider(network = "goerli", API_KEY);
+const alchemyProvider = new ethers.providers.JsonRpcProvider(API_URL_SEPOLIA);
 
 // Signer
 const signer = new ethers.Wallet(PRIVATE_KEY, alchemyProvider);
