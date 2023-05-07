@@ -1,2 +1,4 @@
 .env
 node_modules
+artifacts/@openzeppelin
+artifacts/build-info
